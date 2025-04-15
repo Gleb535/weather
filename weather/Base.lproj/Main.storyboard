@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="АЫЕФПУ" translatesAutoresizingMaskIntoConstraints="NO" id="Rwn-KD-Gk4">
+                                <rect key="frame" x="43" y="242" width="307" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="5Fj-5N-dEF"/>
+                                    <constraint firstAttribute="height" constant="170" id="Kv8-HL-0eJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="MAD-D1-fri"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="j13-4T-YZz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS3-IL-dF7">
+                                <rect key="frame" x="122" y="619" width="149" height="51"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get weather"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5c-yF-nNf">
+                                <rect key="frame" x="187" y="138" width="19" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rwn-KD-Gk4" firstAttribute="top" secondItem="b5c-yF-nNf" secondAttribute="bottom" constant="51" id="5IY-BZ-n3V"/>
+                            <constraint firstItem="KS3-IL-dF7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A5y-YV-qx2"/>
+                            <constraint firstItem="Rwn-KD-Gk4" firstAttribute="top" secondItem="b5c-yF-nNf" secondAttribute="bottom" constant="52" id="HDF-MK-ndo"/>
+                            <constraint firstItem="Rwn-KD-Gk4" firstAttribute="firstBaseline" secondItem="b5c-yF-nNf" secondAttribute="baseline" constant="24.333333333333332" symbolType="layoutAnchor" id="Hou-NG-Umc"/>
+                            <constraint firstItem="b5c-yF-nNf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="MFY-F9-vpp"/>
+                            <constraint firstItem="Rwn-KD-Gk4" firstAttribute="top" secondItem="b5c-yF-nNf" secondAttribute="bottom" constant="14.333333333333314" id="Qe5-cc-TFX"/>
+                            <constraint firstItem="b5c-yF-nNf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U3H-l4-zTw"/>
+                            <constraint firstItem="KS3-IL-dF7" firstAttribute="top" secondItem="Rwn-KD-Gk4" secondAttribute="bottom" constant="57" id="ZB4-gJ-HHM"/>
+                            <constraint firstItem="Rwn-KD-Gk4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fg3-Mi-A5R"/>
+                            <constraint firstItem="b5c-yF-nNf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yw2-Lt-KQJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getWeatherButton" destination="KS3-IL-dF7" id="rts-2d-Ctf"/>
+                        <outlet property="weatherLabel" destination="b5c-yF-nNf" id="LBp-O8-ciA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="АЫЕФПУ" width="493" height="610"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
